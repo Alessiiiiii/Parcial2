@@ -14,6 +14,6 @@ public class BarrilPista : Barril
     {
         GameManager.MostrarMensaje("Pista: 'Estás muy cerca'");
         subiendo = true;
-        Destroy(gameObject, 3f); // se destruye tras 1 segundo
+        Destroy(gameObject, 3f); 
     }
 }

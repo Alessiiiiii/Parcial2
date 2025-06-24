@@ -7,6 +7,7 @@ public class Collectible : Cofre
     public override void Interact()
     {
         GameManager.Instance.AgregarOro(oro);
+        GetComponent<EventoRecolectable>()?.EjecutarEvento();
         Destroy(gameObject);
     }
 }
