@@ -13,7 +13,7 @@ public class PlayerInteraction : MonoBehaviour
             Debug.Log($"Raycast pegó a: {hit.collider.name}");
 
             IInteractable interactable = hit.collider.GetComponent<IInteractable>()
-                                        ?? hit.collider.GetComponentInParent<IInteractable>();
+            ?? hit.collider.GetComponentInParent<IInteractable>();
 
             if (interactable != null)
             {

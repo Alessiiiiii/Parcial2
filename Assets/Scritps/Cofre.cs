@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Cofre : TempleObject
 {
-    [SerializeField] private int oro = 200;
+    [SerializeField] protected int oro = 200;
 
     public override void Interact()
     {
