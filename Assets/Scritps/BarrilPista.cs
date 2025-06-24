@@ -2,11 +2,18 @@ using UnityEngine;
 
 public class BarrilPista : Barril
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private bool subiendo = false;
+
+    void Update()
+    {
+        if (subiendo)
+            transform.Translate(Vector3.up * 2f * Time.deltaTime);
+    }
+
     public override void Interact()
     {
-
-        GameManager.MostrarMensaje("Pista: 'Estas muy cerca'");
+        GameManager.MostrarMensaje("Pista: 'Estás muy cerca'");
+        subiendo = true;
+        Destroy(gameObject, 3f); // se destruye tras 1 segundo
     }
 }
-
