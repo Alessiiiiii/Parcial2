@@ -5,7 +5,7 @@ using TMPro;
 
 public class UIContadorOro : MonoBehaviour
 {
-    [SerializeField] private TMP_Text textoOro;    // Asignalo en el Inspector
+    [SerializeField] private TMP_Text textoOro;    
 
     private void OnEnable()
     {

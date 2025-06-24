@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject); // ← esto lo mantiene al cambiar de escena
+            DontDestroyOnLoad(gameObject); 
         }
         else
         {

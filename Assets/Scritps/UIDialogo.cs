@@ -27,7 +27,7 @@ public class UIDialogo : MonoBehaviour
         textoDialogo.text = mensaje;
         panelDialogo.SetActive(true);
         CancelInvoke();
-        Invoke(nameof(Esconder), 3f); // Oculta tras 3 segundos
+        Invoke(nameof(Esconder), 4f); 
     }
 
     void Esconder()
